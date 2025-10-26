@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Cultivate Your Oasis Effortlessly</title>
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="home" class="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="src/images/favicon.png" alt="PlantPal Logo" class="logo-icon">
+                <span class="logo-text">PlantPal</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#preorder" class="btn-primary btn-desktop">Pre-Order</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#features" class="mobile-nav-link">Features</a>
+                <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+                <a href="#blog" class="mobile-nav-link">Blog</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#preorder" class="btn-mobile">Pre-Order Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in-up">
+                        Cultivate Your Oasis. <span class="text-accent">Effortlessly.</span>
+                    </h1>
+                    <p class="hero-description fade-in-up delay-2">
+                        PlantPal's smart system takes the guesswork out of plant care, ensuring your green friends thrive with automated watering, perfect lighting, and real-time insights.
+                    </p>
+                    <a href="#preorder" class="btn-cta fade-in-up delay-3">
+                        Join the Greenhouse
+                    </a>
+                </div>
+                <div class="hero-image-wrapper fade-in delay-2">
+                    <div class="hero-image-bg"></div>
+                    <img src="src/images/image1.avif" alt="A beautiful, healthy plant being cared for by the PlantPal system" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Art of Perfect Plant Care, Simplified</h2>
+                <p class="section-description">
+                    Discover how PlantPal combines technology and nature to create the perfect environment for your plants to flourish.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="feature-icon sky">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.94 2.29 7.35 5.47 8.95.12.06.27.09.4.09.28 0 .54-.15.69-.4.18-.3.12-.69-.16-.9C5.39 18.23 4 15.3 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 3.3-2.39 6.23-5.47 7.74-.28.15-.34.54-.16.84.18.3.52.4.85.22C19.71 19.35 22 15.94 22 12c0-5.52-4.48-10-10-10zm0 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automated Watering</h3>
+                    <p class="feature-description">PlantPal intelligently waters your plants based on their specific needs, so you never have to worry about over or under-watering again.</p>
+                </div>
+
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="feature-icon amber">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm9-4h-2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zm-3.08 6.92c-.39.39-1.02.39-1.41 0l-1.41-1.41c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41zM12 21c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zm-7.92-3.08c.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0l-1.41 1.41c-.39.39-.39 1.02 0 1.41zM4 11H2c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1zm3.08-6.92c.39-.39.39-1.02 0-1.41L5.67 1.27c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41l1.41 1.41c.39.39 1.02.39 1.41 0zm7.51 11.23c.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0l-1.41 1.41c-.39.39-.39 1.02 0 1.41zM12 3c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Light Control</h3>
+                    <p class="feature-description">Provides the perfect amount of light with a full-spectrum LED system that mimics natural sunlight, adapting to the time of day and plant type.</p>
+                </div>
+
+                <div class="feature-card fade-in-up delay-3">
+                    <div class="feature-icon indigo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">App Integration</h3>
+                    <p class="feature-description">Monitor and control PlantPal from anywhere with our intuitive mobile app. Get real-time updates, growth tracking, and expert tips at your fingertips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Loved by Plant People</h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what our early testers are saying about their PlantPal experience.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in-up delay-1">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-quote">"I've always struggled to keep my plants alive. PlantPal is a game-changer! My fiddle-leaf fig has never looked healthier. It's like having a green thumb in a box."</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person1/100/100" alt="Sarah L." class="author-avatar">
+                        <div>
+                            <h4 class="author-name">Sarah L.</h4>
+                            <p class="author-title">Happy Plant Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up delay-2">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-quote">"As a busy professional, I love the convenience. The app is so easy to use, and I can check on my plants even when I'm traveling. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person2/100/100" alt="Michael B." class="author-avatar">
+                        <div>
+                            <h4 class="author-name">Michael B.</h4>
+                            <p class="author-title">Tech Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in-up delay-3">
+                    <span class="quote-mark">"</span>
+                    <p class="testimonial-quote">"The design is so sleek and modern, it fits perfectly with my home decor. It's not just a plant care system; it's a beautiful piece of tech."</p>
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/seed/person3/100/100" alt="Jessica T." class="author-avatar">
+                        <div>
+                            <h4 class="author-name">Jessica T.</h4>
+                            <p class="author-title">Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Plant Care Insights</h2>
+                <p class="section-description">
+                    Expert tips, guides, and stories from the PlantPal community to help you become a better plant parent.
+                </p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card fade-in-up delay-1">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog1/600/400" alt="Indoor plants in modern home" class="blog-image">
+                        <span class="blog-category">Plant Care</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">October 20, 2025</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">10 Best Indoor Plants for Beginners</h3>
+                        <p class="blog-excerpt">Starting your plant journey? These low-maintenance beauties are perfect for new plant parents. Learn which plants are forgiving, easy to care for, and will thrive in your home.</p>
+                        <a href="blog-post-1.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up delay-2">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog2/600/400" alt="Watering plants correctly" class="blog-image">
+                        <span class="blog-category">Tips & Tricks</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">October 15, 2025</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <h3 class="blog-title">The Complete Guide to Watering Your Plants</h3>
+                        <p class="blog-excerpt">Over-watering is the #1 killer of houseplants. Discover the signs of over and under-watering, and learn how PlantPal's smart sensors take the guesswork out of hydration.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up delay-3">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog3/600/400" alt="Plant under grow lights" class="blog-image">
+                        <span class="blog-category">Technology</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">October 10, 2025</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <h3 class="blog-title">Why Smart Lighting Changes Everything</h3>
+                        <p class="blog-excerpt">Natural light isn't always available. Learn how PlantPal's full-spectrum LED system mimics sunlight and helps your plants photosynthesize efficiently, even in dark corners.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up delay-1">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog4/600/400" alt="Healthy plant leaves" class="blog-image">
+                        <span class="blog-category">Plant Health</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">October 5, 2025</span>
+                            <span class="blog-read-time">8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Common Plant Problems and How to Fix Them</h3>
+                        <p class="blog-excerpt">Yellow leaves? Brown tips? Drooping stems? Identify common plant issues and learn how to diagnose and treat them before it's too late. PlantPal alerts you early.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up delay-2">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog5/600/400" alt="Seasonal plant care" class="blog-image">
+                        <span class="blog-category">Seasonal Care</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">September 28, 2025</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Preparing Your Plants for Winter</h3>
+                        <p class="blog-excerpt">As temperatures drop, your plants need different care. Learn how to adjust watering, lighting, and humidity for the colder months ahead with seasonal PlantPal settings.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up delay-3">
+                    <div class="blog-image-wrapper">
+                        <img src="https://picsum.photos/seed/blog6/600/400" alt="Plant propagation" class="blog-image">
+                        <span class="blog-category">Advanced</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">September 20, 2025</span>
+                            <span class="blog-read-time">10 min read</span>
+                        </div>
+                        <h3 class="blog-title">Plant Propagation 101: Multiply Your Collection</h3>
+                        <p class="blog-excerpt">Turn one plant into many! Master the art of propagation with step-by-step guides for cuttings, division, and rooting. Build your indoor jungle without breaking the bank.</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="blog.html" class="btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="preorder" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Be the First to Grow</h2>
+                <p class="newsletter-description">
+                    Join our waitlist to get exclusive updates, early access, and a special launch day discount.
+                </p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <label for="email-input" class="sr-only">Email address</label>
+                    <input
+                        id="email-input"
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                        class="email-input"
+                    >
+                    <button type="submit" class="btn-signup">
+                        Sign Up
+                    </button>
+                </form>
+                
+                <div class="success-message" id="successMessage">
+                    <p>Thank you for subscribing! We'll keep you posted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">PlantPal</h3>
+                    <p class="footer-text">Bringing nature and technology together for a greener home.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.8 1.92 3.57-.7-.02-1.36-.21-1.93-.53v.05c0 2.08 1.48 3.82 3.44 4.21-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08.55 1.7 2.14 2.94 4.03 2.97-1.47 1.15-3.32 1.83-5.33 1.83-.35 0-.69-.02-1.03-.06 1.9 1.22 4.16 1.93 6.56 1.93 7.88 0 12.2-6.54 12.2-12.2 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.11 0-3.46.01-4.66.06-2.61.12-3.61 1.12-3.73 3.73-.05 1.2-.06 1.55-.06 4.66s.01 3.46.06 4.66c.12 2.61 1.12 3.61 3.73 3.73 1.2.05 1.55.06 4.66.06 3.11 0 3.46-.01 4.66-.06 2.61-.12 3.61-1.12 3.73-3.73.05-1.2.06-1.55.06-4.66s-.01-3.46-.06-4.66c-.12-2.61-1.12-3.61-3.73-3.73-1.2-.05-1.55-.06-4.66-.06zM12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.128 22 16.991 22 12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#preorder" class="footer-link">Pre-Order</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <p class="footer-text">123 Green Way, Eco City, 54321</p>
+                    <p class="footer-text">
+                        <a href="mailto:hello@greennest.eco" class="footer-link">hello@greennest.eco</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> PlantPal Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .btn-mobile');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Newsletter form
+        const newsletterForm = document.getElementById('newsletterForm');
+        const successMessage = document.getElementById('successMessage');
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            console.log('Email submitted:', email);
+            newsletterForm.style.display = 'none';
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                newsletterForm.style.display = 'flex';
+                successMessage.style.display = 'none';
+                newsletterForm.reset();
+            }, 5000);
+        });
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
